@@ -18,7 +18,7 @@ const products = [
   { name: "Coca-Cola Uten Sukker", price: 25, img: "colautensukker.jpg"}
 ]
 
-let cart = []
+var cart = ["1", "2", "gaming"]
 
 Vue.prototype.$products = products
 Vue.prototype.$cart = cart

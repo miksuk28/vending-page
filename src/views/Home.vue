@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <Cart/>
+
     <v-row>
       <ProductCard v-for="product in $products" :key="product.name" :product="product"/>
     </v-row>
