@@ -29,15 +29,27 @@
           <v-col cols="3" class="shrink">
             <v-img src="../assets/product_images/sprite.jpg" height="150" contain></v-img>
           </v-col>
+
           <v-col>
             <v-card-title class="font-weight-bold">Sprite 0.5l Flaske</v-card-title>
             <v-card-text class="font-italic">Pris: 30 kr</v-card-text>
           </v-col>
+
+          <v-col>
+            <v-btn icon>
+              <v-icon>mdi-plus</v-icon>
+            </v-btn>
+            <v-btn icon>
+              <v-icon>mdi-minus</v-icon>
+            </v-btn>
+          </v-col>
+
           <v-col class="text-right">
             <v-btn x-large class="mr-5" icon>
               <v-icon>mdi-close</v-icon>
             </v-btn>
           </v-col>
+
         </v-row>
       </v-card>
 
