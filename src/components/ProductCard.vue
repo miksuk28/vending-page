@@ -3,7 +3,7 @@
       
       <v-card @click="handleProductClick(product)">
         <br>
-        <v-img class="mx-auto" max-height="200" contain :src="getFullImgPath(product.img)"></v-img>
+        <v-img class="mx-auto" max-height="150" contain :src="getFullImgPath(product.img)"></v-img>
         <v-card-title>{{ product.name }}</v-card-title>
         <v-card-text>{{ product.price }} kr</v-card-text>
       </v-card>

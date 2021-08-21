@@ -2,7 +2,7 @@
   <v-container>
     <Cart/>
     <v-row>
-      <ProductCard v-for="product in products" :key="product.name" :product="product"/>
+      <ProductCard v-for="product in $products" :key="product.name" :product="product"/>
     </v-row>
   </v-container>
 </template>
@@ -17,7 +17,7 @@
     components: { ProductCard, Cart },
     data() {
       return {
-        products: [
+        e: [
           { name: "Coca-Cola", price: 25, img: "cocacola.png" },
           { name: "Sprite", price: 22, img: "sprite.jpg"},
           { name: "Solo Super", price: 25, img: "solosuper.jpg"},
