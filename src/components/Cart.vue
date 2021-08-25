@@ -13,13 +13,13 @@
 
         <v-row>
           <v-col class="my-auto" cols="4">
-            <v-img src="../assets/product_images/cocacola.png" contain width="100"></v-img>
+            <v-img :src="'../assets/product_images/' + product.img" contain width="100"></v-img>
           </v-col>
 
           <v-col cols="">
-            <v-card-title class="">Coca Cola 0.5l</v-card-title>
+            <v-card-title class="">{{ product.name }}</v-card-title>
 
-            <v-card-subtitle>Pris: 35 kr</v-card-subtitle>
+            <v-card-subtitle>Pris: {{ product.price }}</v-card-subtitle>
 
             <v-card-actions>
               <v-btn icon>
@@ -37,7 +37,7 @@
           
           <v-col class="mx-auto my-auto">
             <v-card-actions>
-              <v-btn icon>
+              <v-btn right icon>
                 <v-icon>mdi-close</v-icon>
               </v-btn>
             </v-card-actions>
